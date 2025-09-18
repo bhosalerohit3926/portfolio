@@ -9,15 +9,15 @@ import {
 import resume from "../Assets/Rohit-Bhosale.pdf";
 
 const ContactSection = ({ ref }) => {
-  const downloadFile = () => {
-    const pdfUrl = "Sample.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Rohit-Bhosale.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const downloadFile = () => {
+  //   const pdfUrl = "Sample.pdf";
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "Rohit-Bhosale.pdf";
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div ref={ref} className="contact-container">

@@ -36,7 +36,7 @@ import Digi_Exam_Step7_Image from "../Assets/DIGI_EXAM7.png";
 import Digi_Exam_Step8_Image from "../Assets/DIGI_EXAM8.png";
 
 //=========================================================
-import { FaAppStore, FaArrowRight } from "react-icons/fa";
+import { FaAppStore } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
 //=========================================================
 

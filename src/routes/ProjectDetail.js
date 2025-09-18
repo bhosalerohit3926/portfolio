@@ -7,7 +7,8 @@ import StepSection from "../Components/StepSection/StepSection";
 
 const ProjectDetail = (props) => {
   const location = useLocation();
-  const receivedData = location.state || {};
+  // const receivedData = location.state || {};
+  const receivedData = useMemo(() => location.state || {}, [location.state]);
   const [projectData, setProjectData] = useState([]);
   const [parsedData, setParsedData] = useState();
 
@@ -16,7 +17,7 @@ const ProjectDetail = (props) => {
     let data = JSON.parse(receivedData);
     setParsedData(data);
     if (Object.keys(data).length > 0) {
-      let projectData = projectDetails.filter((x) => x.id == data.id);
+      let projectData = projectDetails.filter((x) => x.id === data.id);
       setProjectData(projectData);
     }
   }, [receivedData]);
