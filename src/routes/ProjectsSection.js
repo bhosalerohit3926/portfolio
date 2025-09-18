@@ -45,14 +45,14 @@ const ProjectsSection = ({ ref }) => {
                 >
                   <a
                     className="project-link-btn"
-                    target="_blank"
+                    target="appStoreLink"
                     href={project.App_Store_Link}
                   >
                     {project.App_Store_icon}
                   </a>
                   <a
                     className="project-link-btn"
-                    target="_blank"
+                    target="playStoreLink"
                     href={project.PlayStore_Link}
                   >
                     {project.PlayStore_icon}
