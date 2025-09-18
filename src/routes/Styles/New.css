@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #212121;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.name {
+    font-size: 24px;
+    color: white;
+    font-family: 'Liberti';
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.menutxt {
+    color: #ffc107;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+/* Toggle animation for hamburger */
+.rotate1 {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.fade {
+    opacity: 0;
+}
+
+.rotate2 {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #212121;
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    } }

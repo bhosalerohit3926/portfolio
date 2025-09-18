@@ -1,0 +1,128 @@
+.resume-container {
+    background-color: #222831;
+    color: #fff;
+    padding: 60px 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.resume-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resume-summary {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: #ffc107;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.experience-card {
+    background-color: #212121;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.experience-card h4 {
+    color: #ffc107;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.experience-card h4 span {
+    font-weight: bold;
+    display: block;
+    font-size: 14px;
+}
+
+.experience-card h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.experience-card p {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.education-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.education-card {
+    background-color: #212121;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 260px;
+}
+
+.education-card h4 {
+    color: #ffc107;
+    margin-bottom: 6px;
+}
+
+.education-card h5 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #e0a800;
+}
+
+@media only screen and (max-width : 600px) {
+    .experience-card {
+            background-color: #212121;
+            border-radius: 8px;
+            /* padding: 20px; */
+            flex: 1;
+            min-width: 260px;  
+         }
+}

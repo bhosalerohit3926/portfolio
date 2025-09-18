@@ -1,0 +1,70 @@
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section {
+    padding: 80px 30px;
+    border-bottom: 1px solid #ccc;
+    min-height: 300px;
+    background: #222831;
+}
+
+.hellotxt  {
+    font-style: oblique;
+    color: #fff;
+    font-variant-caps: petite-caps;
+    font-weight: 400;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.profile-circle {
+    background: radial-gradient(circle at center, #ffc107 60%, transparent 60.5%),
+        #fff;
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px solid #222831;
+    box-shadow: 0 0 0 5px #9ccfd3, 0 0 0 12px #cfeef0;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 195px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.sectiondiv {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.twosections {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width : 600px) {
+    .sectiondiv {
+            display: flex;
+            flex: 1;
+            flex-direction: column;   
+        }
+                .twosections {
+                    display: flex;
+                    /* flex: 1;
+                    justify-content: center;        */
+                }
+}

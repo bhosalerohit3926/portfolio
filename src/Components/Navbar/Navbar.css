@@ -1,0 +1,13 @@
+.Navlogo {
+    height: 30px;
+    width: auto;
+}
+
+
+
+@media only screen and (max-width:800px) {
+    .Navlogo {
+            height: 20px;
+            width: auto;            
+        }
+}

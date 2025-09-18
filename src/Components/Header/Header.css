@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    background-color: #1c1c1c;  
+    height: 40px;
+    /* margin: 2px; */
+    /* border-radius: 5px;   */
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 15px 15px;
+    box-shadow: 0 4px 8px 0 rgba(62, 62, 62, 0.2);
+        transition: 0.3s;
+}
+
+.headingtxt {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Liberti';
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.menutext {
+    color: #ffc107;
+    font-family: 'Oswald';
+    font-size: 17px;
+    font-weight: 400;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
