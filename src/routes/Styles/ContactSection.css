@@ -90,3 +90,14 @@
     color: #fff;
   }
   
+
+  @media only screen and (max-width : 600px) {
+    .contact-container {
+        background-color: #222831;
+        color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+   }

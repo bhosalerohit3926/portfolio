@@ -123,6 +123,13 @@
             border-radius: 8px;
             /* padding: 20px; */
             flex: 1;
-            min-width: 260px;  
+            min-width: 220px;  
          }
+                 .education-card {
+                     background-color: #212121;
+                     border-radius: 8px;
+                     /* padding: 20px; */
+                     flex: 1;
+                     min-width: 220px;
+                 }
 }

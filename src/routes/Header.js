@@ -11,6 +11,13 @@ const Header = ({
 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollFunction = (ref) => {
+    try {
+      scrollToSection(ref);
+      setMenuOpen(false);
+    } catch (error) {}
+  };
+
   return (
     <header className="header">
       <h1 className="name">Rohit Bhosale</h1>
@@ -24,19 +31,19 @@ const Header = ({
 
       {/* Navigation Menu */}
       <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
-        <button onClick={() => scrollToSection(homeRef)}>
+        <button onClick={() => scrollFunction(homeRef)}>
           <h4 className="menutxt">Home</h4>
         </button>
-        <button onClick={() => scrollToSection(aboutRef)}>
+        <button onClick={() => scrollFunction(aboutRef)}>
           <h4 className="menutxt">About</h4>
         </button>
-        <button onClick={() => scrollToSection(resumeRef)}>
+        <button onClick={() => scrollFunction(resumeRef)}>
           <h4 className="menutxt">Resume</h4>
         </button>
-        <button onClick={() => scrollToSection(projectsRef)}>
+        <button onClick={() => scrollFunction(projectsRef)}>
           <h4 className="menutxt">Projects</h4>
         </button>
-        <button onClick={() => scrollToSection(contactRef)}>
+        <button onClick={() => scrollFunction(contactRef)}>
           <h4 className="menutxt">Contact</h4>
         </button>
       </nav>
